@@ -1,3 +1,7 @@
+# Archivo de aux
+aux_outputs/
+
+
 # Archivos creados por TeXstudio
 *.aux
 *.lof
