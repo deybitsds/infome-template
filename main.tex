@@ -16,7 +16,7 @@
 ]{article}
 
 % INFORMACIÓN DEL DOCUMENTO
-\def\documenttitle {Dance dance}
+\def\documenttitle {Titulão}
 \def\documentsubtitle {}
 \def\documentsubject {Tema a tratar}
 
@@ -61,7 +61,7 @@
 }
 
 % IMPORTACIÓN DEL TEMPLATE
-\input{template}
+\input{src/main/template}
 
 % INICIO DE PÁGINAS
 \begin{document}
@@ -73,9 +73,7 @@
 \templatePagecfg
 
 % RESUMEN O ABSTRACT
-\begin{abstractd}
-	\lipsum[1] % Párrafo ejemplo, se puede borrar
-\end{abstractd}
+\input{src/main/abstract}
 
 % TABLA DE CONTENIDOS - ÍNDICE
 \templateIndex
@@ -85,7 +83,7 @@
 
 % ======================= INICIO DEL DOCUMENTO =======================
 
-\input{src/etc/example} % Ejemplo, se puede borrar
+\input{src/main/example} % Ejemplo, se puede borrar
 
 % FIN DEL DOCUMENTO
 \end{document}
