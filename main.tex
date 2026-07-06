@@ -1,14 +1,3 @@
-% Template:     Informe LaTeX
-% Documento:    Archivo principal
-% Versión:      8.4.7 (02/07/2026)
-% Codificación: UTF-8
-%
-% Autor: Pablo Pizarro R.
-%        pablo@ppizarror.com
-%
-% Manual template: [https://template-latex.github.io/informe]
-% Licencia MIT:    [https://opensource.org/licenses/MIT]
-
 % CREACIÓN DEL DOCUMENTO
 \documentclass[
 	spanish, % Idioma: spanish, english, etc.
@@ -16,52 +5,47 @@
 ]{article}
 
 % INFORMACIÓN DEL DOCUMENTO
-\def\documenttitle {Dance dance}
+\def\documenttitle {Titulão}
 \def\documentsubtitle {}
 \def\documentsubject {Tema a tratar}
 
-\def\documentauthor {Nombre del autor}
+\def\documentauthor {David Fernando Prieto Cardoso}
 \def\coursename {Curso}
 \def\coursecode {CO-1234}
 
-\def\universityname {Universidad de Chile}
-\def\universityfaculty {Facultad de Ciencias Físicas y Matemáticas}
-\def\universitydepartment {Departamento de la Universidad}
-\def\universitydepartmentimage {departamentos/fcfm}
+\def\universityname {Universidad Nacional de San Antonio Abad del Cusco}
+\def\universityfaculty {Facultad de Ingeniería Eléctrica, Electrónica, Informática y Mecánica}
+\def\universitydepartment {Ingeniería Informática y de Sistemas}
+\def\universitydepartmentimage {logos/info_negro} % logo carrera
+\def\universitylogoimage {logos/unsaac_negro} % logo universidad
 \def\universitydepartmentimagecfg {height=1.57cm}
-\def\universitylocation {Santiago de Chile}
+\def\universitylocation {Cusco, Perú}
 
 % INTEGRANTES, PROFESORES Y FECHAS
 \def\authortable {
 	\begin{tabular}{ll}
-		Integrantes:
+		Alumno:
 		& \begin{tabular}[t]{l}
-			Integrante 1 \\
-			Integrante 2
+			{\documentauthor}  \\
+			%	Integrante 1 \\
+			% 	Integrante 2
 		\end{tabular} \\
 		Profesor:
 		& \begin{tabular}[t]{l}
-			Profesor 1
+			Tu Tio
 		\end{tabular} \\
-		Auxiliar:
+		Curso:
 		& \begin{tabular}[t]{l}
-			Auxiliar 1
+			{\coursename}
 		\end{tabular} \\
-		Ayudantes:
-		& \begin{tabular}[t]{l}
-			Ayudante 1 \\
-			Ayudante 2
-		\end{tabular} \\
-		\multicolumn{2}{l}{Ayudante de laboratorio: Ayudante 1} \\
 		& \\
 		\multicolumn{2}{l}{Fecha de realización: \today} \\
-		\multicolumn{2}{l}{Fecha de entrega: \today} \\
 		\multicolumn{2}{l}{\universitylocation}
 	\end{tabular}
 }
 
 % IMPORTACIÓN DEL TEMPLATE
-\input{template}
+\input{src/main/template}
 
 % INICIO DE PÁGINAS
 \begin{document}
@@ -73,9 +57,7 @@
 \templatePagecfg
 
 % RESUMEN O ABSTRACT
-\begin{abstractd}
-	\lipsum[1] % Párrafo ejemplo, se puede borrar
-\end{abstractd}
+\input{src/main/abstract}
 
 % TABLA DE CONTENIDOS - ÍNDICE
 \templateIndex
@@ -85,7 +67,7 @@
 
 % ======================= INICIO DEL DOCUMENTO =======================
 
-\input{src/etc/example} % Ejemplo, se puede borrar
+\input{src/main/main} % Ejemplo, se puede borrar
 
 % FIN DEL DOCUMENTO
 \end{document}
