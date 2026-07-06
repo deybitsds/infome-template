@@ -1,0 +1,62 @@
+\sectionanum{Más ejemplos}
+
+% Inserta un subtítulo sin número
+\subsectionanum{Listas y Enumeraciones}
+
+	Hacer listas enumeradas con \LaTeX\ es muy fácil con el template\footnote{También puedes revisar el manual de las enumeraciones en \url{https://latex.ppizarror.com/doc/enumitem.pdf}.}, para ello debes usar el comando \texttt{\textbackslash begin\{enumerate\}}, cada elemento comienza por \texttt{\textbackslash item}, resultando así:
+
+	\begin{enumerate}
+		\item Grecia
+		\item Abracadabra
+		\item Manzanas
+	\end{enumerate}
+
+	También se puede cambiar el tipo de enumeración, se pueden usar letras, números romanos, entre otros. Esto se logra cambiando el \textbf{label} del objeto \texttt{enumerate}. A continuación se muestra un ejemplo usando letras con el estilo \texttt{\textbackslash alph}\footnote{Con \texttt{\textbackslash Alph} las letras aparecen en mayúscula.}, números romanos con \texttt{\textbackslash roman}\footnote{Con \texttt{\textbackslash Roman} los números romanos salen en mayúscula.} o números griegos con \texttt{\textbackslash greek}\footnote{Una característica propia del template, con \texttt{\textbackslash Greek} las letras griegas están escritas en mayúscula.}:
+
+	\begin{multicols}{3}
+		\begin{enumeratebf}[label=\alph*) ] % Fuente en negrita
+			\item Peras
+			\item Manzanas
+			\item Naranjas
+		\end{enumeratebf}
+
+		\begin{enumerate}[label=\roman*) ]
+			\item Rojo
+			\item Café
+			\item Morado
+		\end{enumerate}
+
+		\begin{enumerate}[label=\greek*) ]
+			\item Matemáticas
+			\item Lenguaje
+			\item Filosofía
+		\end{enumerate}
+	\end{multicols}
+
+	Para hacer listas sin numerar con \LaTeX\ hay que usar el comando \texttt{\textbackslash begin\{itemize\}}, cada elemento empieza por \texttt{\textbackslash item}, resultando:
+
+	\begin{multicols}{3}
+		\begin{itemize}[label={--}]
+			\item Peras
+			\item Manzanas
+			\item Naranjas
+		\end{itemize}
+
+		\begin{enumerate}[label={*}]
+			\item Rojo
+			\item Café
+			\item Morado
+		\end{enumerate}
+
+		\begin{itemize}
+			\item Árboles
+			\item Pasto
+			\item Flores
+		\end{itemize}
+	\end{multicols}
+
+% Inserta un subtítulo sin número
+\subsectionanum{Otros}
+
+	Recuerda revisar el manual de todas las funciones y configuraciones de este template visitando el siguiente link: \url{https://latex.ppizarror.com/informe}. Si encuentras un error en el template, puedes abrir un nuevo issue a través de su página en GitHub.
+

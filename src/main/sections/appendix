@@ -1,0 +1,43 @@
+\begin{appendixd}
+
+	\section{Cálculos realizados}
+
+	\subsection{Metodología}
+
+	\lipsum[1] \eqref{eqn:identidad-imposible}
+
+	% Imagen, se numerará automáticamente con la letra del anexo según
+	% la configuración \appendixindepobjnum
+	\insertimage[\label{img:anexo-2}]{ejemplos/test-image.png}{scale=0.19}{Imagen en anexo.}
+
+	\subsection{Resultados}
+
+	\lipsum[10]
+
+	% Tablas
+	\enabletablerowcolor[2] % Activa el color de celda
+	\begin{table}[H]
+		\begin{threeparttable}
+		\centering
+		\caption{Tabla de cálculo.}
+		\begin{tabular}{T{2cm}ccC{4cm}}
+			\hline
+			\textbf{Elemento} & $\epsilon_i$ & \textbf{Valor} & \textbf{Descripción} \bigstrut \\
+			\hline
+			A     & 10    & 3,14$\pi$ & Valor muy interesante\tnote{a} \\
+			B     & 20    & 6 & Segundo elemento \\
+			C     & 30    & 7 & Tercer elemento\tnote{1} \\
+			D     & 150    & 10 & Sin descripción \\
+			E     & 0    & 0 & Cero \\
+			\hline
+			\end{tabular}
+		\begin{tablenotes}
+			\item[a] Este elemento tiene una descripción debajo de la tabla
+			\item[1] Más comentarios
+		\end{tablenotes}
+		\end{threeparttable}
+		\label{tab:anexo-1}
+	\end{table}
+	\disabletablerowcolor % Desactiva el color de celda
+
+\end{appendixd}
